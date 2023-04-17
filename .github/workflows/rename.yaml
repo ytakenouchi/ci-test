@@ -10,8 +10,4 @@ jobs:
   steps:
     - name: Greet
     - run:  echo "Rename text file"
-    - name: ls 001
-    - run:  pwd:ls -la
-    - name: Make file
-    - run:  touch text.txt
-    
+
