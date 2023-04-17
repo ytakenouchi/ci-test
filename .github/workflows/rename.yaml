@@ -1,0 +1,17 @@
+name: Hello, World!
+on: 
+ push:
+  baranchs:
+  - develop/rename 
+jobs:
+ build:
+  name: Greeting
+  runs-on: ubuntu-latest
+  steps:
+    - name: Greet
+    - run:  echo "Rename text file"
+    - name: ls 001
+    - run:  pwd:ls -la
+    - name: Make file
+    - run:  touch text.txt
+    
