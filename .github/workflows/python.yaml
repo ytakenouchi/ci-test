@@ -1,12 +1,22 @@
-name: Hello, World!
+name: Install Python!
 on: 
  push:
-  baranchs:
+  branchs:
   - develop/rename 
 jobs:
  build:
   name: Greeting
   runs-on: ubuntu-latest
   steps:
-    - run: echo "Hello, World2!"
+    - name: Checkout
+      uses: actions/checkout@v3
+    
+    - name: Echo
+      run: echo "Install Python!"
+    
+    - name: Pwd echo ls
+      run: pwd;ls -la
 
+    - name: Install Python
+      run: |
+        python3 -v
