@@ -1,13 +1,13 @@
-name: Hello, World!
+name: rename
 on: 
  push:
   baranchs:
   - develop/rename 
 jobs:
  build:
-  name: Greeting
+  name: Rename
   runs-on: ubuntu-latest
   steps:
-    - name: Greet
+    - name: Rename
     - run:  echo "Rename text file"
 
