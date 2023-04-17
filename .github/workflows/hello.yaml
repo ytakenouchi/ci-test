@@ -1,0 +1,12 @@
+name: Hello, World!
+on: 
+ push:
+  baranchs:
+  - develop/rename 
+jobs:
+ build:
+  name: Greeting
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo "Hello, World2!"
+
