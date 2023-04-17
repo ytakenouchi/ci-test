@@ -9,4 +9,5 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - run: echo "Rename2!"
-    - run: ls
+    - run: pwd
+    - run: ls -a 
