@@ -1,4 +1,4 @@
-name: rename
+name: Rename!
 on: 
  push:
   baranchs:
@@ -8,6 +8,4 @@ jobs:
   name: Rename
   runs-on: ubuntu-latest
   steps:
-    - name: Rename
-    - run:  echo "Rename text file"
-
+    - run: echo "Rename2!"
