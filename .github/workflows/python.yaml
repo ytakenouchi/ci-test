@@ -2,10 +2,10 @@ name: Install Python!
 on: 
  push:
   branchs:
-  - develop/rename 
+  - develop/python 
 jobs:
  build:
-  name: Greeting
+  name: Python
   runs-on: ubuntu-latest
   steps:
     - name: Checkout
