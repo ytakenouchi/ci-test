@@ -3,8 +3,8 @@ on:
  push:
   branches:
    - develop/pluto 
-  paths:
-   - "test/test.txt"
+#  paths:
+#   - "test/test.txt"
 jobs:
  build:
   name: pluto
