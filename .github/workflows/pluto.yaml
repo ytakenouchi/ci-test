@@ -20,4 +20,4 @@ jobs:
       - name: Pluto version
         run: pluto version
       - name: Python3 version
-        run: Python3 -V
+        run: python3 -V
