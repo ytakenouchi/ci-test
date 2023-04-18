@@ -3,8 +3,8 @@ on:
  push:
   branchs:
    - develop/pluto 
-  paths:
-   - ~/text/text.text
+#  paths:
+#   - ~/text/text.text
 jobs:
  build:
   name: pluto
