@@ -1,16 +1,13 @@
-name: CI
+name: pluto install
 
 on:
   push:
     branches:
       - develop/pluto
-  pull_request:
-    branches:
-      - develop/pluto
 
 jobs:
   pluto:
-    name: pluto
+    name: pluto install
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
