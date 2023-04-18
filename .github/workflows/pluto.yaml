@@ -22,6 +22,15 @@ jobs:
         ls -la
         echo "CHK"
         ls -l ./test/test.txt
-    - name: Install Pluto
+
+    - name: Download Pluto
+      run: |
+        FairwindsOps/pluto/github-action@master
+
+    - name: Use pluto
+      run: |
+        pluto detect-files -d pkg/finder/testdata
+
+    - name: Check Python3
       run: |
         python3 -V
