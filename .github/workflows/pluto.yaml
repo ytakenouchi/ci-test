@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Download Pluto
         uses: FairwindsOps/pluto/github-action@master
-      - name: Use pluto
-        run: |
-          pluto detect-files -d pkg/finder/testdata
+      - name: Run Pluto
+        run: pluto detect-files -d . -o wide --target-versions k8s=v1.23.0
+      - name: Pluto version
+        run: pluto version
