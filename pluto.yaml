@@ -1,4 +1,4 @@
-name: Install Pluto
+name: Install Pluto!
 on: 
  push:
   branchs:
