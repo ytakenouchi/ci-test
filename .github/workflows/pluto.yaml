@@ -17,3 +17,5 @@ jobs:
         run: pluto detect-files -d . -o wide --target-versions k8s=v1.23.0
       - name: Pluto version
         run: pluto version
+      - name: Python3 version
+        run: Python3 -V
