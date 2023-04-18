@@ -2,7 +2,9 @@ name: Install Pluto!
 on: 
  push:
   branchs:
-  - develop/pluto 
+   - develop/pluto 
+  paths:
+   - ~/text/text.text
 jobs:
  build:
   name: pluto
