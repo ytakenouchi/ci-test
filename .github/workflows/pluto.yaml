@@ -4,7 +4,7 @@ on:
   branches:
    - develop/pluto 
   paths:
-   - 'text/text.txt'
+   - "text/text.txt"
 jobs:
  build:
   name: pluto
