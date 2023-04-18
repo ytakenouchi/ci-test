@@ -1,4 +1,4 @@
-name: pluto install
+name: pluto install 034
 
 on:
   push:
