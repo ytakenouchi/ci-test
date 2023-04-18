@@ -3,10 +3,10 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - develop/pluto
   pull_request:
     branches:
-      - main
+      - develop/pluto
 
 jobs:
   pluto:
