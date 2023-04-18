@@ -1,0 +1,22 @@
+name: Install Pluto
+on: 
+ push:
+  branchs:
+  - develop/pluto 
+jobs:
+ build:
+  name: pluto
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    
+    - name: Echo
+      run: echo "Install Pluto"
+    
+    - name: Pwd echo ls
+      run: pwd;ls -la
+
+    - name: Install Pluto
+      run: |
+        python3 -v
