@@ -21,7 +21,7 @@ jobs:
         pwd
         ls -la
         echo "CHK"
-        ls -l ./test/text.txt
+        ls -l ./test/test.txt
     - name: Install Pluto
       run: |
         python3 -V
