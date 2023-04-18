@@ -1,7 +1,7 @@
 name: Install Pluto!
 on: 
  push:
-  branchs:
+  branches:
    - develop/pluto 
   paths:
    - 'text/text.txt'
@@ -24,4 +24,4 @@ jobs:
         ls -l ./test/text.txt
     - name: Install Pluto
       run: |
-        python3 -v
+        python3 -V
