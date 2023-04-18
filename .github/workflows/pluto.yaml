@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v2
     
     - name: Echo
-      run: echo "Install Pluto 12"
+      run: echo "Install Pluto 23"
     
     - name: Pwd echo ls
       run: |
