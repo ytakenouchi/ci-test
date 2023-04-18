@@ -1,36 +1,20 @@
-name: Install Pluto!
-on: 
- push:
-  branches:
-   - develop/pluto 
-#  paths:
-#   - "test/test.txt"
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
- build:
-  name: pluto
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    
-    - name: Echo
-      run: echo "Install Pluto 23"
-    
-    - name: Pwd echo ls
-      run: |
-        pwd
-        ls -la
-        echo "CHK"
-        ls -l ./test/test.txt
-
-    - name: Download Pluto
-      run: |
-        FairwindsOps/pluto/github-action@master
-
-    - name: Use pluto
-      run: |
-        pluto detect-files -d pkg/finder/testdata
-
-    - name: Check Python3
-      run: |
-        python3 -V
+  pluto:
+    name: pluto
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download Pluto
+        uses: FairwindsOps/pluto/github-action@master
+      - name: Run Pluto
+        run: pluto detect-files -d . -o wide --target-versions k8s=v1.23.0
