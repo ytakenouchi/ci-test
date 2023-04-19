@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - develop/pluto
-    paths:
-      - 'test/test.txt'
+#    paths:
+#      - 'test/test.txt'
 
 jobs:
   pluto:
