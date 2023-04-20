@@ -1,15 +1,13 @@
-name: pluto install 036
+name: pluto test-OK
 
 on:
   push:
     branches:
       - develop/pluto
-#    paths:
-#      - 'test/test.txt'
 
 jobs:
   pluto:
-    name: pluto install
+    name: pluto test-OK
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,6 +15,8 @@ jobs:
         uses: FairwindsOps/pluto/github-action@master
       - name: Run Pluto
         run: pluto detect-files -d . -o wide --target-versions k8s=v1.23.0
+      - name: Run serviceaccount.yaml
+        run: pluto detect-files -f ./templates/serviceaccount.yaml -o wide --target-versions k8s=v1.23.0
       - name: Pluto version
         run: pluto version
       - name: Python3 version
