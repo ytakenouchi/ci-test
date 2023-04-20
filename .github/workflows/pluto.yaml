@@ -14,9 +14,9 @@ jobs:
       - name: Download Pluto
         uses: FairwindsOps/pluto/github-action@master
       - name: Run Pluto
-        run: pluto detect-files -d test-ok.yaml -o wide --target-versions k8s=v1.23.0
+        run: pluto detect-files -d . -o wide --target-versions k8s=v1.23.0
       - name: Run test-yaml-file
-        run: pluto detect-files -f test-ok.yaml -o wide --target-versions k8s=v1.23.0
+        run: pluto detect-files -f ./* -o wide --target-versions k8s=v1.23.0
       - name: Pluto version
         run: pluto version
       - name: Python3 version
