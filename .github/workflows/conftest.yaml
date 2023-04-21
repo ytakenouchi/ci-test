@@ -1,0 +1,24 @@
+name: pluto test-OK3
+
+on:
+  push:
+    branches:
+      - develop/pluto
+
+jobs:
+  pluto:
+    name: pluto test-OK
+    runs-on: ubuntu-latest
+    steps:
+      - name: name checkout
+      - uses: actions/checkout@v3
+      - name: install conftest
+      run: |
+        VERSION=$(curl --silent https://api.github.com/repos/open-policy-agent/conftest/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+        wget https://github.com/open-policy-agent/conftest/releases/download/${VERSION}/conftest_${VERSION#v}_Linux_x86_64.tar.gz
+        tar xzf conftest_${VERSION#v}_Linux_x86_64.tar.gz
+        sudo mv conftest /usr/local/bin/
+        conftest --version
+      
+      - name: Python3 version
+        run: python3 -V
