@@ -22,6 +22,7 @@ jobs:
       - name: conf install
         run: |
           docker pull openpolicyagent/conftest
-      - name: Python3 version
-        run: python3 -V
+      - name: conf test
+        run: conftest test hello-deploy.yaml
+
 
