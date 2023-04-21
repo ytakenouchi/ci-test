@@ -12,7 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: conf version
-        run: LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)
+        run: |
+          LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)
+          echo $LATEST_VERSION
       - name: Python3 version
         run: python3 -V
 
