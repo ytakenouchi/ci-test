@@ -15,4 +15,4 @@ spec:
       - image: nginx:1.17.3
         name: multi
         securityContext:  # privileged は禁止したい
-          privileged: true
+          privileged: false
