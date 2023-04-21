@@ -12,10 +12,5 @@ jobs:
     steps:
       - name: name checkout
       - uses: actions/checkout@v3
-      - name: conftest install
-      run: |
-      LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)
-      echo $LATEST_VERSION
-      
       - name: Python3 version
         run: python3 -V
