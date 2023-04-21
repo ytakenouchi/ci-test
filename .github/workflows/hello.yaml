@@ -1,4 +1,4 @@
-name: Hello, World!
+name: Hello, helm
 on: 
  push:
   baranchs:
