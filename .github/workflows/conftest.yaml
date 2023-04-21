@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: conf version
+      - name: conf install
         run: |
           LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)
           wget "https://github.com/open-policy-agent/conftest/releases/download/v${LATEST_VERSION}/conftest_${LATEST_VERSION}_Linux_x86_64.tar.gz"
@@ -19,6 +19,9 @@ jobs:
           sudo mv conftest /usr/local/bin/
           conftest --version
           ls -la
+      - name: conf install
+        run: |
+          docker pull openpolicyagent/conftest
       - name: Python3 version
         run: python3 -V
 
