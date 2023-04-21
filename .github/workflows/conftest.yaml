@@ -1,13 +1,13 @@
-name: pluto test-OK3
+name: conftest
 
 on:
   push:
     branches:
-      - develop/pluto
+      - develop/conftest
 
 jobs:
   pluto:
-    name: pluto test-OK
+    name: conftest-OK
     runs-on: ubuntu-latest
     steps:
       - name: name checkout
