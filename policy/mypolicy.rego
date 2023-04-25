@@ -17,6 +17,6 @@ warn[msg] {
 # privileged が使われているかのチェック
 deny[msg] {
   input.kind == "Deployment"
-  input.spec.template.spec.containers[_].securityContext.privileged == true
+  input.spec.template.spec.containers[_].securityContext.privileged == false
   msg = "privileged はセキュリティ上の理由で許可されていません"
 }
