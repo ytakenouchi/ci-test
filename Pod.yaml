@@ -12,7 +12,7 @@ spec:
     securityContext:
       allowPrivilegeEscalation: false
       windowsOptions:
-        hostProcess: true
+        hostProcess: false
 #  securityContext:
 #    seccompProfile:
 #      type: Unconfined
