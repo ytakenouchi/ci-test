@@ -5,7 +5,7 @@ import data.lib.utils
 
 default failHostProcess = false
 
-# containers 
+# containers
 getContainersWithDisallowedhostProcess[name] {
 	container := kubernetes.containers[_]
 	options := container.securityContext.windowsOptions
