@@ -24,7 +24,7 @@ failhostProcess {
 deny[msg] {
 	failhostProcess
 
-	msg := kubernetes.format(sprintf("%s '%s' should set 'spec.containers.securityContext.windowsOptions.hostProcess' to false", [kubernetes.kind, kubernetes.name]))
+	msg := kubernetes.format(sprintf("%s '%s' should set 'spec.containers.name.securityContext.windowsOptions.hostProcess' to false", [kubernetes.kind, kubernetes.name]))
 }
 
 # containers
