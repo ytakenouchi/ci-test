@@ -19,11 +19,11 @@ jobs:
           sudo mv conftest /usr/local/bin/
           conftest --version
           ls -la
-      - name: docker pul
+      - name: docker pull
         run: |
           docker pull openpolicyagent/conftest
       - name: "conf test"
-        run: conftest test Pod.yaml 
+        run: conftest test --policy ./policy --input yaml manifests/*
         #run: conftest test hello-deply.yaml --policy policy
 
 
