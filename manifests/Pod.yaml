@@ -3,9 +3,9 @@ kind: Pod
 metadata:
   name: windows_host
 spec:
-  securityContext:
-    windowsOptions:
-      hostProcess: true
+#  securityContext:
+#    windowsOptions:
+#      hostProcess: true
   containers:
   - name: windows_host
     image: paulbouwer/hello-kubernetes:1.5
