@@ -17,7 +17,7 @@ spec:
       windowsOptions:
         hostProcess: false
   volumes:
-  - name: hostpath-sample
+  - name: hostpath-test
     hostPath:
       path: /etc
 
