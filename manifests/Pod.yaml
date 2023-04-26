@@ -5,6 +5,7 @@ metadata:
 spec:
   hostIPC: false
   hostNetwork: false
+  hosthostPID: false
   containers:
   - name: windows_host
     image: paulbouwer/hello-kubernetes:1.5
