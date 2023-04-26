@@ -7,6 +7,7 @@ spec:
   hostNetwork: false
   hostPID: false
   containers:
+  
   - name: windows_host
     image: paulbouwer/hello-kubernetes:1.5
     ports:
