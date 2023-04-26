@@ -9,7 +9,7 @@ failHostPID {
 	kubernetes.host_pids[_] == true
 }
 
-deny[res] {
+deny[msg] {
 	failHostPID
 
 	msg := kubernetes.format(sprintf("%s '%s' should not set 'spec.template.spec.hostPID' to true", [kubernetes.kind, kubernetes.name]))
