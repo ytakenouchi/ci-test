@@ -26,8 +26,8 @@ spec:
   - name: hostpath-test
     persistentVolumeClaim:
       claimName: test-pvc
-#    hostPath:
-#      path: /etc
+    hostPath:
+      path: /etc
 
 #  securityContext:
 #    seccompProfile:
