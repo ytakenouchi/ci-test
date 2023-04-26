@@ -17,7 +17,11 @@ spec:
       allowPrivilegeEscalation: false
       windowsOptions:
         hostProcess: false
-
+  volumes:
+  - name: hostpath-sample
+    hostPath:
+      path: /etc
+      type: DirectoryOrCreate
 
 #  securityContext:
 #    seccompProfile:
