@@ -19,7 +19,7 @@ jobs:
           sudo mv conftest /usr/local/bin/
           conftest --version
           ls -la
-      - name: docker pull
+      # - name: docker pull
         # run: |
         #   docker pull openpolicyagent/conftest
       - name: "conf test"
