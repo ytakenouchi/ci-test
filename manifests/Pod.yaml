@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: windows_host
 spec:
-  hostIPC: false
+  hostIPC: true
   hostNetwork: false
   hostPID: false
   containers:
