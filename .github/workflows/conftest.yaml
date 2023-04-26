@@ -20,8 +20,8 @@ jobs:
           conftest --version
           ls -la
       - name: docker pull
-        run: |
-          docker pull openpolicyagent/conftest
+        # run: |
+        #   docker pull openpolicyagent/conftest
       - name: "conf test"
         run: conftest test manifests/Pod.yaml 
 
