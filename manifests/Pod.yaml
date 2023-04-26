@@ -3,7 +3,8 @@ kind: Pod
 metadata:
   name: windows_host
 spec:
-  hostIPC: true
+  hostIPC: false
+  hostNetwork: false
   containers:
   - name: windows_host
     image: paulbouwer/hello-kubernetes:1.5
