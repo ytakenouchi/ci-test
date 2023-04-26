@@ -16,12 +16,13 @@ spec:
       allowPrivilegeEscalation: false
       capabilities:
         add : 
+        - name: "NET_ADMIN"
           windowsOptions:
           hostProcess: false
   volumes:
   - name: hostpath-test
     hostPath:undefined
-#      path: /etc
+      path: /etc
 
 #  securityContext:
 #    seccompProfile:
