@@ -23,8 +23,10 @@ jobs:
         run: |
           docker pull openpolicyagent/conftest
       - name: "conf test"
-        run: conftest test hello-deply.yaml --policy policy-hello/*
+        run: conftest test manifests/Pod.yaml 
+
+#        run: conftest test hello-deply.yaml --policy policy-hello/*
 #        run: conftest test hello-deply.yaml --policy policy-hello
 #        run: conftest test hello-deply.yaml --policy policy-hello/* 054
 #        run: conftest test hello-deply.yaml --policy policy-hello/mypolicy.rego 053
-#        run: conftest test manifests/Pod.yaml 
+
