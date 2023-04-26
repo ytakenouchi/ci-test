@@ -14,12 +14,14 @@ spec:
       protocol: tcp
     securityContext:
       allowPrivilegeEscalation: false
-      windowsOptions:
-        hostProcess: false
+      capabilities:
+        add : 
+#      windowsOptions:
+#      hostProcess: false
   volumes:
   - name: hostpath-test
     hostPath:
-      path: /etc
+#      path: /etc
 
 #  securityContext:
 #    seccompProfile:
