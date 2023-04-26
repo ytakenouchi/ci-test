@@ -16,11 +16,11 @@ spec:
       allowPrivilegeEscalation: false
       capabilities:
         add : 
-#      windowsOptions:
-#      hostProcess: false
+          windowsOptions:
+          hostProcess: false
   volumes:
   - name: hostpath-test
-    hostPath:
+    hostPath:undefined
 #      path: /etc
 
 #  securityContext:

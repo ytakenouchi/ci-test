@@ -20,7 +20,7 @@ spec:
 #      hostProcess: false
   volumes:
   - name: hostpath-test
-    hostPath:undefined
+    hostPath:
 #      path: /etc
 
 #  securityContext:
