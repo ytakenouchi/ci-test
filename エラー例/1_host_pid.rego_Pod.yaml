@@ -21,7 +21,7 @@ spec:
   volumes:
   - name: hostpath-test
     hostPath:
-    path: undefined
+    path: 
 
 #  securityContext:
 #    seccompProfile:
