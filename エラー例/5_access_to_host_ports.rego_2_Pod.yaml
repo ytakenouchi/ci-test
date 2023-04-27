@@ -12,18 +12,15 @@ spec:
     ports:
     - containerPort: 80
       protocol: tcp
-#      hostPort : 8080
-#      01 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
-
+      hostPort : 8080
+#     02 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
   containers:
   - name: windows_host
     image: paulbouwer/hello-kubernetes:1.5
     ports:
     - containerPort: 80
       protocol: tcp
-#      hostPort : 8080
-#      01 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
-
+#     01 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
