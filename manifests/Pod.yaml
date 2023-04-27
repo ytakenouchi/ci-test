@@ -14,7 +14,7 @@ spec:
     - containerPort: 80
       protocol: tcp
       hostPort : 8080
-#      01 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
+#      03 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
 
 
   initContainers:
@@ -24,7 +24,7 @@ spec:
     - containerPort: 80
       protocol: tcp
 #      hostPort : 8080
-#      01 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
+#      02 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
 
   containers:
   - name: windows_host
