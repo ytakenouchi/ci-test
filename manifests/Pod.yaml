@@ -22,7 +22,7 @@ spec:
     ports:
     - containerPort: 80
       protocol: tcp
-#      hostPort : 8080
+      hostPort : 8080
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
