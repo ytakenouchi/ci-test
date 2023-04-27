@@ -4,7 +4,7 @@ test_host_ports_defined_denied {
 	r := deny with input as {
 		"apiVersion": "v1",
 		"kind": "Pod",
-		"metadata": {"name": "hello-host-ports"},
+		"metadata": {"name": "windows_host"},
 		"spec": {"containers": [{
 			"command": [
 				"sh",
@@ -25,7 +25,7 @@ test_no_host_ports_defined_allowed {
 	r := deny with input as {
 		"apiVersion": "v1",
 		"kind": "Pod",
-		"metadata": {"name": "hello-host-ports"},
+		"metadata": {"name": "windows_host"},
 		"spec": {"containers": [{
 			"command": [
 				"sh",
