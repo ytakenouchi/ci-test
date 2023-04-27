@@ -28,7 +28,7 @@ spec:
       claimName: test-pvc
     hostPath:
       path: /etc
-
+ 
 #  securityContext:
 #    seccompProfile:
 #      type: Unconfined
