@@ -9,8 +9,8 @@ spec:
   initContainers:
   - name: init01
     image: centos:latest
-    ports:
-    hostPort: 8080
+    ports: 
+      hostPort: 8080
 
 #    args:
 #    - /bin/sh
@@ -22,6 +22,7 @@ spec:
     ports:
     - containerPort: 80
       protocol: tcp
+#      hostPort : 8080
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
