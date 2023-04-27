@@ -2,7 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: hello-apparmor
-  annotations: container.apparmor.security.beta.kubernetes.io/*
+  annotations:
+    container.apparmor.security.beta.kubernetes.io/windows_host: localhost
 spec:
   hostIPC: false
   hostNetwork: false
