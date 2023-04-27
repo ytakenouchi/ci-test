@@ -18,9 +18,9 @@ spec:
 #        add : 
 #      windowsOptions:
 #      hostProcess: false
-  volumes:
-  - name: hostpath-test
-    hostPath:
+#  volumes:
+#  - name: hostpath-test
+#    hostPath:
 #      path: 
 
 #  securityContext:
