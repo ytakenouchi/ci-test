@@ -6,13 +6,13 @@ spec:
   hostIPC: false
   hostNetwork: false
   hostPID: false
-  initContainers:
-  - name: init01
-    image: centos:latest
-    args:
-    - /bin/sh
-    - -c
-    - echo "test" > /test/index.html
+#  initContainers:
+#  - name: init01
+#    image: centos:latest
+#    args:
+#    - /bin/sh
+#    - -c
+#    - echo "test" > /test/index.html
   containers:
   - name: windows_host
     image: paulbouwer/hello-kubernetes:1.5
