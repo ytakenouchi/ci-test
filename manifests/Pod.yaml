@@ -3,9 +3,9 @@ kind: Pod
 metadata:
   name: hello-apparmor
   annotations:
-    container.apparmor.security.beta.kubernetes.io/windows_host: test
 #    container.apparmor.security.beta.kubernetes.io/windows_host: lruntime/default
 #    container.apparmor.security.beta.kubernetes.io/*: lruntime/default
+    container.apparmor.security.beta.kubernetes.io/*: test
 
 spec:
   hostIPC: false
