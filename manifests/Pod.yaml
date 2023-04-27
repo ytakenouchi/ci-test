@@ -19,7 +19,7 @@ spec:
         - name: "NET_ADMIN"
           windowsOptions:
           hostProcess: false
-#    volumeMounts:
+#    volumeMounts: 
 #    - name: test-pvc
 #      mountPath: /data
 #  volumes:
