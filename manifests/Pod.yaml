@@ -16,9 +16,9 @@ spec:
       allowPrivilegeEscalation: false
       capabilities:
         add : 
-        - name: "NET_ADMIN"
-          windowsOptions:
-          hostProcess: false
+        - "NET_ADMIN"
+      windowsOptions:
+        hostProcess: false
 #    volumeMounts: 
 #    - name: test-pvc
 #      mountPath: /data
