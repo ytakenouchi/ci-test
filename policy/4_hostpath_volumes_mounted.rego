@@ -3,7 +3,7 @@ package main
 import data.lib.kubernetes
 import data.lib.utils
 
-default failHostPathVolume = false
+default failHostPathVolume = true
 
 failHostPathVolume {
 	volumes := kubernetes.volumes
