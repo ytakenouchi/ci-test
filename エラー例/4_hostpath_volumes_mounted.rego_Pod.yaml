@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: windows_host
+spec:
+  hostIPC: false
+  hostNetwork: false
+  hostPID: false
+  containers:
+  - name: windows_host
+    image: paulbouwer/hello-kubernetes:1.5
+    ports:
+    - containerPort: 8080
+      protocol: tcp
+    securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        add : 
+        - name: "NET_ADMIN"
+          windowsOptions:
+          hostProcess: false
+    volumeMounts:
+    - name: test-pvc
+      mountPath: /data
+  volumes:
+  - name: hostpath-test
+    persistentVolumeClaim:
+      claimName: test-pvc
+#    hostPath:
+#      path: \
+ 
+#  securityContext:
+#    seccompProfile:
+#      type: Unconfined
