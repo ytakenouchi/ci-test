@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: hello-apparmor
   annotations:
-    container.apparmor.security.beta.kubernetes.io/hello
+    container.apparmor.security.beta.kubernetes.io/runtime
 spec:
   hostIPC: false
   hostNetwork: false
