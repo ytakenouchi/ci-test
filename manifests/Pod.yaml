@@ -10,8 +10,8 @@ spec:
   - name: windows_host
     image: paulbouwer/hello-kubernetes:1.5
     ports:
-      - Port: 80
-#    - containerPort: 8080
+    - containerPort: 80
+       - hostPort: 8080
 #      protocol: tcp
     securityContext:
       allowPrivilegeEscalation: false
