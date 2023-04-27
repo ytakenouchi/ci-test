@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: hello-apparmor
   annotations:
-    container.apparmor.security.beta.kubernetes.io/hello: *
+    container.apparmor.security.beta.kubernetes.io/hello
 spec:
   hostIPC: false
   hostNetwork: false
@@ -15,7 +15,7 @@ spec:
     ports:
     - containerPort: 80
       protocol: tcp
-      hostPort: 8080
+#      hostPort: 8080
 #      03 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
 
 
