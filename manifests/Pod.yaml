@@ -47,6 +47,8 @@ spec:
       - "NET_ADMIN"
     windowsOptions:
       hostProcess: false
+    seLinuxOptions: container_t
+    
 #    volumeMounts: 
 #    - name: test-pvc
 #      mountPath: /data
