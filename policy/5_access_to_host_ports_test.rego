@@ -13,7 +13,7 @@ test_host_ports_defined_denied {
 			],
 			"image": "busybox",
 			"name": "hello",
-			"ports": [{"hostPort": 8080}],
+			"ports": [{"hostPort": 80}],
 		}]},
 	}
 
