@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: hello-apparmor
   annotations:
-    container.apparmor.security.beta.kubernetes.io/windows_host: localhost
+    container.apparmor.security.beta.kubernetes.io/windows_host: lruntime/default
 spec:
   hostIPC: false
   hostNetwork: false
