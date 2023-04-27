@@ -4,7 +4,8 @@ import data.lib.kubernetes
 default failHostPorts = false
 
 # Add allowed host ports to this set
-allowed_host_ports = set()
+#allowed_host_ports = set()
+allowed_host_ports = set(443)
 
 # getContainersWithDisallowedHostPorts returns a list of containers which have
 # host ports not included in the allowed host port list
