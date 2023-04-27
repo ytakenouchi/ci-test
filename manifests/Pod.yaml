@@ -7,10 +7,12 @@ spec:
   hostNetwork: false
   hostPID: false
   initContainers:
-  - name: init01
-    image: centos:latest
-    ports: 
-      hostPort: 8080
+  - name: windows_host
+    image: paulbouwer/hello-kubernetes:1.5
+    ports:
+    - containerPort: 80
+      protocol: tcp
+      hostPort : 8080
 
 #    args:
 #    - /bin/sh
@@ -22,7 +24,7 @@ spec:
     ports:
     - containerPort: 80
       protocol: tcp
-      hostPort : 8080
+#      hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
     securityContext:
       allowPrivilegeEscalation: false
       capabilities:
