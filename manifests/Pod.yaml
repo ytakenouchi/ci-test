@@ -7,10 +7,11 @@ spec:
   hostNetwork: false
   hostPID: false
   initContainers:
+  - name: init01
+    image: centos:latest
     ports:
     hostPort: 8080
-#  - name: init01
-#    image: centos:latest
+
 #    args:
 #    - /bin/sh
 #    - -c
