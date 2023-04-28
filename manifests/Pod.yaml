@@ -54,17 +54,15 @@ spec:
       protocol: tcp
           #      hostPort : 8080
           #      01 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
-
     #spec.containers[*].securityContext.seLinuxOptions テストOK
     securityContext:
-      windowsOptions: procMount
-                    #procMount:
+      windowsOptions: 
         hostProcess: false
       seLinuxOptions: 
 #        role: testname 
 #        user: user1
         type: container_t
-      name: Proc_name
+      procMount: Default
 
   securityContext:
     windowsOptions:
