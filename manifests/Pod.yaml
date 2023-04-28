@@ -74,7 +74,7 @@ spec:
 
 #spec.securityContext.sysctls
     sysctls:
-    - name: kernel.shm_rmid_forced
+    - name: kernel.shm_rmid_fo
 
 #    allowPrivilegeEscalation: false
 #    capabilities:
