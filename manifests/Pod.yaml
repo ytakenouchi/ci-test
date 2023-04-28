@@ -48,7 +48,7 @@ spec:
         hostProcess: false
       seLinuxOptions: 
 #        key: role 
-        type: container_tt
+        type: container_t
 
 
   securityContext:
