@@ -47,7 +47,7 @@ spec:
       windowsOptions:
         hostProcess: false
       seLinuxOptions: 
-#        key: role 
+        key: role 
         type: container_t
 
 
