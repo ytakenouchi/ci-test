@@ -31,6 +31,8 @@ spec:
 #      hostPort : 8080
 #      02 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
 
+#spec.initContainers[*].securityContext.seLinuxOptions
+
   containers:
   - name: windows_host
     image: paulbouwer/hello-kubernetes:1.5
@@ -45,6 +47,7 @@ spec:
       windowsOptions:
         hostProcess: false
       seLinuxOptions: 
+#        key: role 
         type: container_tt
 
 
