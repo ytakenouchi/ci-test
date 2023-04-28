@@ -39,6 +39,12 @@ spec:
       protocol: tcp
 #      hostPort : 8080
 #      01 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
+    securityContext:
+      windowsOptions:
+        hostProcess: false
+      seLinuxOptions: 
+        type: container_t
+
 
   securityContext:
     windowsOptions:
