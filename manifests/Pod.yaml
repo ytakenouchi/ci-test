@@ -25,7 +25,7 @@ spec:
     securityContext:
       seLinuxOptions: 
         type: container_t
-spec.securityContext.seLinuxOptions.user
+#spec.securityContext.seLinuxOptions.user
 #        user: aaa
 
   initContainers:
