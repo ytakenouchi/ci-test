@@ -21,6 +21,11 @@ spec:
 #      hostPort: 8080
 #      03 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
 
+#spec.ephemeralContainers[*].securityContext.seLinuxOptions.type
+    securityContext:
+      seLinuxOptions: 
+        type: container_t
+
 
   initContainers:
   - name: windows_host
@@ -53,6 +58,7 @@ spec:
   securityContext:
     windowsOptions:
       hostProcess: false
+#spec.securityContext.seLinuxOptions
     seLinuxOptions: 
       type: container_t
 
