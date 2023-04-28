@@ -43,6 +43,8 @@ spec:
         hostProcess: false
       seLinuxOptions: 
         type: container_t
+        role: testname 
+#        user: user1
 
   containers:
   - name: windows_host
