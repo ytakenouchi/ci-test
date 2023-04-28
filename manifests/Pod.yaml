@@ -43,9 +43,9 @@ spec:
   securityContext:
     windowsOptions:
       hostProcess: false
-    seLinuxOptions: container_t
+    seLinuxOptions: 
+      type: container_t
 
-    
 #    allowPrivilegeEscalation: false
 #    capabilities:
 #      add : 
