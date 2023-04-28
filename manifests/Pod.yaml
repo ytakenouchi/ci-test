@@ -73,8 +73,8 @@ spec:
       type: container_t
 
 #spec.securityContext.sysctls
-#    sysctls:
-#      name: kernel.shm_rmid_for
+    sysctls:
+    - name: kernel.shm_rmid_for
 
 #    allowPrivilegeEscalation: false
 #    capabilities:
