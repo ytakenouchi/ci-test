@@ -25,7 +25,8 @@ spec:
     securityContext:
       seLinuxOptions: 
         type: container_t
-
+spec.securityContext.seLinuxOptions.user
+#        user: aaa
 
   initContainers:
   - name: windows_host
@@ -57,8 +58,9 @@ spec:
       windowsOptions:
         hostProcess: false
       seLinuxOptions: 
+#        role: testname 
+#        user: user1
         type: container_t
-
 
   securityContext:
     windowsOptions:
