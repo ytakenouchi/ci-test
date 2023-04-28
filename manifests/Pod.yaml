@@ -44,7 +44,7 @@ spec:
     windowsOptions:
       hostProcess: false
     seLinuxOptions: 
-      type: container_tss
+      type: container_t
 
 #    allowPrivilegeEscalation: false
 #    capabilities:
