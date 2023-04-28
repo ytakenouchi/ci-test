@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: hello-apparmor
   annotations:
-    container.apparmor.security.beta.kubernetes.io/windows_host: runtime/default2
+    container.apparmor.security.beta.kubernetes.io/*: runtime/default
 #    container.apparmor.security.beta.kubernetes.io/*: lruntime/default
 #    container.apparmor.security.beta.kubernetes.io/*: test
 
