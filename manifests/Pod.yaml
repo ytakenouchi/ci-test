@@ -37,6 +37,11 @@ spec:
 #      02 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
 
 #spec.initContainers[*].securityContext.seLinuxOptions
+    securityContext:
+      windowsOptions:
+        hostProcess: false
+      seLinuxOptions: 
+        type: container_t
 
   containers:
   - name: windows_host
