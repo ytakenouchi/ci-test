@@ -58,11 +58,13 @@ spec:
     #spec.containers[*].securityContext.seLinuxOptions テストOK
     securityContext:
       windowsOptions:
+                    #procMount:
         hostProcess: false
       seLinuxOptions: 
 #        role: testname 
 #        user: user1
         type: container_t
+      name: Proc_name
 
   securityContext:
     windowsOptions:
