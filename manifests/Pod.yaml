@@ -62,7 +62,7 @@ spec:
 #        role: testname 
 #        user: user1
         type: container_t
-      procMount: Default
+#      procMount: Default
 
   securityContext:
     windowsOptions:
