@@ -49,18 +49,10 @@ hasAllowedType(options) {
 	allowed_selinux_types[_] == options.type
 }
 
-deny[res] {
+deny[msg] {
 	type := failSELinuxType[_]
 
 	msg := kubernetes.format(sprintf("%s '%s' uses invalid seLinux type '%s'", [kubernetes.kind, kubernetes.name, type]))
-
-	res := {
-		"msg": msg,
-		"id": __rego_metadata__.id,
-		"title": __rego_metadata__.title,
-		"severity": __rego_metadata__.severity,
-		"type": __rego_metadata__.type,
-	}
 }
 
 deny[msg] {
