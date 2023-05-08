@@ -44,7 +44,7 @@ deny[msg] {
 }
 
 # containers
-deny[res] {
+deny[msg] {
 	count(getContainersWithDisallowedSeccompProfileType) > 0
 
 	msg := kubernetes.format(sprintf("Container '%s' of %s '%s' should set 'spec.containers[*].securityContext.seccompProfile.type' to 'RuntimeDefault'", [getContainersWithDisallowedSeccompProfileType[_], kubernetes.kind, kubernetes.name]))
