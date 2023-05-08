@@ -99,7 +99,7 @@ spec:
 #    nfs:
 #      server: nfs-server.example.com
 #    persistentVolumeClaim:
-#      claimName: test-pvc
+#      claimName: test-pvc 
 
  
 #  securityContext:
