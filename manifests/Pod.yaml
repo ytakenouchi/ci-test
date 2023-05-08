@@ -85,9 +85,9 @@ spec:
 #      - "NET_ADMIN"
 
     
-#    volumeMounts: 
-#    - name: test-pvc
-#      mountPath: /data
+    volumeMounts: 
+    - name: test-pvc
+      mountPath: /data
   volumes:
   - name: hostpath-test
     persistentVolumeClaim:
