@@ -65,7 +65,7 @@ spec:
 #      seLinuxOptions: 
 #        role: testname 
 #        user: user1
-        type: container_t
+#       type: container_t
 #
       procMount: Default 
 
