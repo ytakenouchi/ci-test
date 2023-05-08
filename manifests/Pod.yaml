@@ -90,10 +90,13 @@ spec:
       mountPath: /data
   volumes:
   - name: hostpath-test
+#    hostPath: 
+#      path: test
+    nfs:
+      server: nfs-server.example.com
     persistentVolumeClaim:
       claimName: test-pvc
-    hostPath: 
-      path: test
+
  
 #  securityContext:
 #    seccompProfile:
