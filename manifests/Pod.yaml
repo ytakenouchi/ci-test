@@ -69,9 +69,9 @@ spec:
 #
 #      procMount: Default 
 
-  securityContext:
-#    seccompProfile:
-#      type: RuntimeDefault
+  - securityContext:
+      seccompProfile:
+      type: RuntimeDefault
     windowsOptions:
       hostProcess: false
 #spec.securityContext.seLinuxOptions
