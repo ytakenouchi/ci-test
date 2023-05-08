@@ -55,7 +55,7 @@ spec:
           #      hostPort : 8080
           #      01 hostPort : 8080  ※エラー出現OK 5_access_to_host_ports.rego
     #spec.containers[*].securityContext.seLinuxOptions テストOK
-    securityContext:
+#    securityContext:
 #      allowPrivilegeEscalation: true
 #      capabilities:
 #        add:
