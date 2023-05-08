@@ -67,11 +67,11 @@ spec:
 #        user: user1
 #       type: container_t
 #
-      procMount: Default 
+#      procMount: Default 
 
   securityContext:
     seccompProfile:
-      type: default
+      type: RuntimeDefault
     windowsOptions:
       hostProcess: false
 #spec.securityContext.seLinuxOptions
