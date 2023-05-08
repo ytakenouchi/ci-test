@@ -93,7 +93,7 @@ spec:
     persistentVolumeClaim:
       claimName: test-pvc
     hostPath: 
-      path: \
+      path: test
  
 #  securityContext:
 #    seccompProfile:
