@@ -71,7 +71,7 @@ spec:
 
   - securityContext:
       seccompProfile:
-      type: RuntimeDefault
+      type: RuntimeDefault2
     windowsOptions:
       hostProcess: false
 #spec.securityContext.seLinuxOptions
