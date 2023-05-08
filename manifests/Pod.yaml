@@ -58,7 +58,7 @@ spec:
     securityContext:
       capabilities:
         add:
-      #  - AUDIT_WRITE
+      #  - AUDIT_WRITE 
       windowsOptions: 
         hostProcess: false
       seLinuxOptions: 
