@@ -5,7 +5,8 @@ import data.lib.kubernetes
 default failAdditionalCaps = false
 
 # Add allowed capabilities to this set
-allowed_caps = set()
+#allowed_caps = set()
+allowed_caps = AUDIT_WRITE
 
 # getContainersWithDisallowedCaps returns a list of containers which have
 # additional capabilities not included in the allowed capabilities list
