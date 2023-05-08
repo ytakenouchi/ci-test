@@ -57,7 +57,7 @@ spec:
     #spec.containers[*].securityContext.seLinuxOptions テストOK
     securityContext:
       capabilities:
-        add: AUDIT_WRITEa
+        add: AUDIT_WRITE
       windowsOptions: 
         hostProcess: false
       seLinuxOptions: 
