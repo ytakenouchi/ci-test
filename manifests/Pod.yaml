@@ -92,16 +92,15 @@ spec:
   - name: hostpath-test
 #    hostPath: 
 #      path: test
-    rbd:
-      monitors:
-      - 10.16.154.78:6789
-      pool: rbd
+#    rbd:
+#      monitors:
+#      - 10.16.154.78:6789
+#      pool: rbd
 #    nfs:
 #      server: nfs-server.example.com
 #    persistentVolumeClaim:
 #      claimName: test-pvc 
 
- 
 #  securityContext:
 #    seccompProfile:
 #      type: Unconfined
