@@ -54,7 +54,7 @@ spec:
         type: container_t
 #        role: testname 
 #        user: user1
-      procMount: Default
+    #  procMount: Default
       allowPrivilegeEscalation: true
       #capabilities:
       #  add:
