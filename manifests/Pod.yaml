@@ -13,9 +13,9 @@ spec:
       seccompProfile:
         type: RuntimeDefault
 
-#  securityContext:
-#    seccompProfile: 
-#          type: 
+  securityContext:
+    seccompProfile: 
+          type: 
 
 
 #  ephemeralContainers:
