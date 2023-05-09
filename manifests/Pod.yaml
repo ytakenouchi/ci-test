@@ -69,7 +69,7 @@ spec:
 #
 #      procMount: Default 
 
-  - securityContext:
+  securityContext:
       seccompProfile:S
       type: RuntimeDefault2
     windowsOptions:
