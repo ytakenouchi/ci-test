@@ -5,17 +5,13 @@ metadata:
   annotations:
      container.apparmor.security.beta.kubernetes.io/*: runtime/default
 spec:
-  hostIPC: false
-  hostNetwork: false
-  hostPID: false
-
   containers:
   - name: windows_host
     image: paulbouwer/hello-kubernetes:1.5
     securityContext:
       allowPrivilegeEscalation: false
       seccompProfile:
-        type: 
+        type: RuntimeDefault
 
 #  securityContext:
 #    seccompProfile: 
