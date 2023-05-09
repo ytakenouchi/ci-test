@@ -27,30 +27,30 @@ spec:
     securityContext:
       windowsOptions:
         hostProcess: false
-      seLinuxOptions: 
-        type: container_t
-  containers:
-  - name: windows_host
-    image: paulbouwer/hello-kubernetes:1.5
-    ports:
-    - containerPort: 80
-      protocol: tcp
-  - securityContext:
-      seccompProfile:
-      type: RuntimeDefault2
-    windowsOptions:
-      hostProcess: false
-    seLinuxOptions: 
-      type: container_t
-    sysctls:
-    - name: net.ipv4.ip_local_port_rangeaa    
-    volumeMounts: 
-    - name: test-pvc
-      mountPath: /data
-  volumes:
-  - name: hostpath-test
-#    hostPath: 
-#      path: test
+#      seLinuxOptions: 
+#        type: container_t
+#  containers:
+#  - name: windows_host
+#    image: paulbouwer/hello-kubernetes:1.5
+#    ports:
+#    - containerPort: 80
+#      protocol: tcp
+#  - securityContext:
+#      seccompProfile:
+#      type: RuntimeDefault2
+#    windowsOptions:
+#      hostProcess: false
+#    seLinuxOptions: 
+#      type: container_t
+#    sysctls:
+#    - name: net.ipv4.ip_local_port_rangeaa    
+#    volumeMounts: 
+#    - name: test-pvc
+#      mountPath: /data
+#  volumes:
+#  - name: hostpath-test
+##    hostPath: 
+##      path: test
 #    rbd:
 #      monitors:
 #      - 10.16.154.78:6789
