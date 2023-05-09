@@ -23,7 +23,7 @@ spec:
 
   securityContext:
     seccompProfile: 
-          type: 
+#          type: 
 
 
 #  ephemeralContainers:
