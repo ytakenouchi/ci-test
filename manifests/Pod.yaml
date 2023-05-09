@@ -45,7 +45,7 @@ spec:
 #        user: user1
 
   containers:
-  - name: windows_host
+  - name: containers
     image: paulbouwer/hello-kubernetes:1.5
     securityContext:
       allowPrivilegeEscalation: true
@@ -62,7 +62,7 @@ spec:
 
 #      windowsOptions: 
 #        hostProcess: false
-#      seLinuxOptions: 
+    seLinuxOptions: 
 #        role: testname 
 #        user: user1
 #       type: container_t
