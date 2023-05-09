@@ -70,7 +70,7 @@ spec:
 #      procMount: Default 
 
   - securityContext:
-      seccompProfile:
+      seccompProfile:S
       type: RuntimeDefault2
     windowsOptions:
       hostProcess: false
