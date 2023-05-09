@@ -47,7 +47,7 @@ spec:
   containers:
   - name: containers
     image: paulbouwer/hello-kubernetes:1.5
-     securityContext:
+    securityContext:
     #  procMount: Default
       seLinuxOptions: 
         type: container_t
