@@ -15,9 +15,10 @@ spec:
     securityContext:
       allowPrivilegeEscalation: false
       seccompProfile:
+        type: 
 
-  securityContext:
-    seccompProfile: 
+#  securityContext:
+#    seccompProfile: 
 #          type: 
 
 
