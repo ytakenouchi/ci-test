@@ -80,7 +80,7 @@ spec:
  #    user: user1
 #spec.securityContext.sysctls
     sysctls:
-    - name: net.ipv4.ip_local_port_rangeaa
+  #  - name: net.ipv4.ip_local_port_rangeaa
 
 #    allowPrivilegeEscalation: false
 #    capabilities:
