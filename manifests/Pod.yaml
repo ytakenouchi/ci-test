@@ -63,7 +63,7 @@ spec:
 #      windowsOptions: 
 #        hostProcess: false
     seLinuxOptions: 
-#        role: testname 
+      role: testname 
 #        user: user1
 #       type: container_t
 #
