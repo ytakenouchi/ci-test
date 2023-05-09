@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: hello-apparmor
   annotations:
-     container.apparmor.security.beta.kubernetes.io/windows_host: runtime/default5A
+     container.apparmor.security.beta.kubernetes.io/windows_host: runtime/default
 
 spec:
   hostIPC: false
