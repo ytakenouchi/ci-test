@@ -9,15 +9,15 @@ spec:
   hostNetwork: false
   hostPID: false
 
-  ephemeralContainers:
-  - name: windows_host
-    image: paulbouwer/hello-kubernetes:1.5
-    ports:
-    - containerPort: 80
-      protocol: tcp
-    securityContext:
-        seLinuxOptions: 
-          type: container_t
+#  ephemeralContainers:
+#  - name: windows_host
+#    image: paulbouwer/hello-kubernetes:1.5
+#    ports:
+#    - containerPort: 80
+#      protocol: tcp
+#    securityContext:
+#        seLinuxOptions: 
+#          type: container_t
 #    initContainers:
 #    - name: windows_host
 #      image: paulbouwer/hello-kubernetes:1.5
