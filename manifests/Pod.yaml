@@ -92,8 +92,8 @@ spec:
       mountPath: /data
   volumes:
   - name: hostpath-test
-    hostPath: 
-      path: 
+#   hostPath: 
+#      path: 
 #    rbd:
 #      monitors:
 #      - 10.16.154.78:6789
