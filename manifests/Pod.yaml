@@ -6,9 +6,9 @@ metadata:
      container.apparmor.security.beta.kubernetes.io/*: runtime/default
 
 spec:
-  hostIPC: false
-  hostNetwork: false
-  hostPID: false
+  hostIPC: true
+  hostNetwork: true
+  hostPID: true
 
   ephemeralContainers:
   - name: windows_host
