@@ -49,7 +49,7 @@ spec:
     image: paulbouwer/hello-kubernetes:1.5
     securityContext:
       seLinuxOptions: 
-        type: container_ta
+        type: container_t
         #role: testname 
 #        user: user1
       allowPrivilegeEscalation: true
