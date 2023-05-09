@@ -22,7 +22,7 @@ spec:
 #spec.ephemeralContainers[*].securityContext.seLinuxOptions.type
     securityContext:
       seLinuxOptions: 
-        type: container_t
+#        type: container_t
 #spec.securityContext.seLinuxOptions.user
 #        user: aaa
 
