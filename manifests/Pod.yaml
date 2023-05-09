@@ -76,7 +76,7 @@ spec:
       hostProcess: false
 #spec.securityContext.seLinuxOptions
     seLinuxOptions: 
-      type: container_t
+      type: container_t2
 
 #spec.securityContext.sysctls
     sysctls:
