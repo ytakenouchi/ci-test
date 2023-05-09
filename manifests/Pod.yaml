@@ -77,8 +77,8 @@ spec:
     #spec.securityContext.seLinuxOptions
     seLinuxOptions: 
       type: container_t
-#      role: testname 
-
+ #      role: testname 
+      user: user1
 #spec.securityContext.sysctls
     sysctls:
     - name: net.ipv4.ip_local_port_rangeaa
