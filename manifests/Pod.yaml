@@ -56,8 +56,8 @@ spec:
     securityContext:
       allowPrivilegeEscalation: true
       capabilities:
-        add: test
-#      #  - AUDIT_WRITE 
+        add:
+      #  - AUDIT_WRITE 
 #      windowsOptions: 
 #        hostProcess: false
 #      seLinuxOptions: 
