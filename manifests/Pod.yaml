@@ -56,7 +56,7 @@ spec:
     securityContext:
       allowPrivilegeEscalation: true
       capabilities:
-        add:
+        add: test
 #      #  - AUDIT_WRITE 
 #      windowsOptions: 
 #        hostProcess: false
