@@ -74,9 +74,9 @@ spec:
       type: RuntimeDefault
     windowsOptions:
       hostProcess: false
-#spec.securityContext.seLinuxOptions
+    #spec.securityContext.seLinuxOptions
     seLinuxOptions: 
-      type: container_t2
+      type: container_t
 
 #spec.securityContext.sysctls
     sysctls:
