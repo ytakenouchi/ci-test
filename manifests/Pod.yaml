@@ -48,7 +48,7 @@ spec:
   - name: containers
     image: paulbouwer/hello-kubernetes:1.5
     securityContext:
-      procMount: Default
+      procMount: "Default"
       seLinuxOptions: 
         type: container_t
 #        role: testname 
