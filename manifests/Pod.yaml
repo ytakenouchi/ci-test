@@ -63,9 +63,9 @@ spec:
 #      windowsOptions: 
 #        hostProcess: false
     seLinuxOptions: 
+      type: container_t
       role: testname 
 #        user: user1
-#       type: container_t
 #
 #      procMount: Default 
 
