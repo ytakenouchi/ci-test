@@ -16,17 +16,17 @@ spec:
     - containerPort: 80
       protocol: tcp
     securityContext:
-      seLinuxOptions: 
-        type: container_t
-  initContainers:
-  - name: windows_host
-    image: paulbouwer/hello-kubernetes:1.5
-    ports:
-    - containerPort: 80
-      protocol: tcp
-    securityContext:
-      windowsOptions:
-        hostProcess: false
+        seLinuxOptions: 
+          type: container_t
+#    initContainers:
+#    - name: windows_host
+#      image: paulbouwer/hello-kubernetes:1.5
+#      ports:
+#      - containerPort: 80
+#        protocol: tcp
+#      securityContext:
+#        windowsOptions:
+#          hostProcess: false
 #      seLinuxOptions: 
 #        type: container_t
 #  containers:
@@ -35,7 +35,7 @@ spec:
 #    ports:
 #    - containerPort: 80
 #      protocol: tcp
-#  - securityContext:
+#    securityContext:
 #      seccompProfile:
 #      type: RuntimeDefault2
 #    windowsOptions:
