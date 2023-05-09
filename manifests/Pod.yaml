@@ -21,6 +21,11 @@ spec:
     securityContext:
       allowPrivilegeEscalation: false
 
+  securityContext:
+    seccompProfile: 
+          type: default
+
+
 #  ephemeralContainers:
 #  - name: windows_host
 #    image: paulbouwer/hello-kubernetes:1.5
