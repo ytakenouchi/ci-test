@@ -50,7 +50,7 @@ spec:
     securityContext:
       seLinuxOptions: 
         type: container_t
-        role: testname 
+#        role: testname 
 #        user: user1
       allowPrivilegeEscalation: true
       #capabilities:
