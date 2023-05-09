@@ -51,7 +51,7 @@ spec:
       allowPrivilegeEscalation: true
       capabilities:
         add:
-        - AUDIT_WRITE 
+        #- AUDIT_WRITE 
 
     ports:
     - containerPort: 80
@@ -86,8 +86,7 @@ spec:
 #    capabilities:
 #      add : 
 #      - "NET_ADMIN"
-
-    
+ 
     volumeMounts: 
     - name: test-pvc
       mountPath: /data
