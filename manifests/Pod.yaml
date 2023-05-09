@@ -48,11 +48,14 @@ spec:
   - name: containers
     image: paulbouwer/hello-kubernetes:1.5
     securityContext:
+      seLinuxOptions: 
+        type: container_ta
+        #role: testname 
+#        user: user1
       allowPrivilegeEscalation: true
       #capabilities:
       #  add:
         #- AUDIT_WRITE 
-
     ports:
     - containerPort: 80
       protocol: tcp
@@ -62,10 +65,7 @@ spec:
 
 #      windowsOptions: 
 #        hostProcess: false
-      seLinuxOptions: 
-        type: container_t
-        role: testname 
-#        user: user1
+
 #
 #      procMount: Default 
 
@@ -77,8 +77,8 @@ spec:
     #spec.securityContext.seLinuxOptions
     seLinuxOptions: 
       type: container_t
- #      role: testname 
-      user: user1
+ #    role: testname 
+ #    user: user1
 #spec.securityContext.sysctls
     sysctls:
     - name: net.ipv4.ip_local_port_rangeaa
