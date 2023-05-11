@@ -27,7 +27,7 @@ spec:
 #        user: aaa
 
   initContainers:
-  - name: windows_host
+  - name: initcontainars
     image: paulbouwer/hello-kubernetes:1.5
     ports:
     - containerPort: 80
@@ -43,7 +43,8 @@ spec:
         type: container_t
 #       role: testname 
 #        user: user1
-
+      allowPrivilegeEscalation: false
+      
   containers:
   - name: containers
     image: paulbouwer/hello-kubernetes:1.5
@@ -52,7 +53,7 @@ spec:
         hostProcess: false
       seLinuxOptions: 
         type: container_t
-#      allowPrivilegeEscalation: false
+      allowPrivilegeEscalation: false
 #        role: testname 
 #        user: user1
 #     procMount: 'Default'
