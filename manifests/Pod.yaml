@@ -85,7 +85,7 @@ spec:
 #    allowPrivilegeEscalation: false
 #    capabilities:
 #      add : 
-#      - "NET_ADMIN"
+#      - "NET_ADMIN" 
  
     volumeMounts: 
     - name: test-pvc
