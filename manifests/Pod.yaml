@@ -43,7 +43,7 @@ spec:
         type: container_t
 #       role: testname 
 #        user: user1
-      allowPrivilegeEscalation: false
+      allowPrivilegeEscalation: true
 
   containers:
   - name: containers
