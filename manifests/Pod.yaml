@@ -92,7 +92,7 @@ spec:
       mountPath: /data
   volumes:
   - name: hostpath-test
-#   hostPath: 
+    hostPath: 
       path: 
 #    rbd:
 #      monitors:
