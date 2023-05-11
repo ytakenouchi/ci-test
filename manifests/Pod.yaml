@@ -48,6 +48,7 @@ spec:
   - name: containers
     image: paulbouwer/hello-kubernetes:1.5
     securityContext:
+      allowPrivilegeEscalation: false
       windowsOptions: 
         hostProcess: false
       seLinuxOptions: 
@@ -55,7 +56,6 @@ spec:
 #        role: testname 
 #        user: user1
 #     procMount: 'Default'
-      allowPrivilegeEscalation: true
       #capabilities:
       #  add:
         #- AUDIT_WRITE 
