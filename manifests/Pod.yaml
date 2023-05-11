@@ -73,7 +73,7 @@ spec:
 
   securityContext:
     seccompProfile:
-      type: RuntimeDefault-bbb
+      type: RuntimeDefault
     windowsOptions:
       hostProcess: false
     #spec.securityContext.seLinuxOptions
