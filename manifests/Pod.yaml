@@ -43,7 +43,7 @@ spec:
         type: container_t
 #       role: testname 
 #        user: user1
-      allowPrivilegeEscalation: true
+      allowPrivilegeEscalation: false
 
   containers:
   - name: containers
@@ -53,7 +53,7 @@ spec:
         hostProcess: false
       seLinuxOptions: 
         type: container_t
-      allowPrivilegeEscalation: false
+      allowPrivilegeEscalation: true
 #        role: testname 
 #        user: user1
 #     procMount: 'Default'
