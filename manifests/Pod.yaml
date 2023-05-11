@@ -55,7 +55,7 @@ spec:
         type: container_t
       allowPrivilegeEscalation: false
       seccompProfile:
-        type: RuntimeDefault
+        type: RuntimeDefault-aaa
 #        role: testname 
 #        user: user1
 #     procMount: 'Default'
