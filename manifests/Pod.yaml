@@ -55,7 +55,7 @@ spec:
         type: container_t
       allowPrivilegeEscalation: false
       seccompProfile:
-        type: RuntimeDefault-aaa
+        type: RuntimeDefault
 #        role: testname 
 #        user: user1
 #     procMount: 'Default'
@@ -73,7 +73,7 @@ spec:
 
   securityContext:
     seccompProfile:
-      type: RuntimeDefault
+      type: RuntimeDefault-bbb
     windowsOptions:
       hostProcess: false
     #spec.securityContext.seLinuxOptions
