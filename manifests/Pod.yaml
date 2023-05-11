@@ -98,8 +98,8 @@ spec:
 #      monitors:
 #      - 10.16.154.78:6789
 #      pool: rbd
-    nfs:
-      server: nfs-server.example.com
+#    nfs:
+#      server: nfs-server.example.com
 #    persistentVolumeClaim:
 #      claimName: test-pvc 
 
