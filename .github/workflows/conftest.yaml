@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - develop/conftest
-  pull:
+  pull_request:
     branches:
       - develop/conftest
 
