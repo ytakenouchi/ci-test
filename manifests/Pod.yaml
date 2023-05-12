@@ -6,7 +6,7 @@ metadata:
      container.apparmor.security.beta.kubernetes.io/windows_host: runtime/default
 
 spec:
-  hostIPC: true
+  hostIPC: false
   hostNetwork: false
   hostPID: false
 
