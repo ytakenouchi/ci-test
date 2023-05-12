@@ -6,7 +6,7 @@ on:
       - develop/conftest
   pull_request:
     branches:
-      - main
+      - develop/conftest
 
 #条件
 jobs:
@@ -21,8 +21,9 @@ jobs:
       - name: rego repository
         uses: actions/checkout@v3
         with:
-          repository: ytakenouchi/ci-conftes
+          repository: ytakenouchi/ci-conftest
           path: policy
+      
       - name: conf install
         run: |
           LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)
@@ -36,9 +37,4 @@ jobs:
         #   docker pull openpolicyagent/conftest
       - name: "conf test"
         run: conftest test manifests/Pod.yaml 
-
-#        run: conftest test hello-deply.yaml --policy policy-hello/*
-#        run: conftest test hello-deply.yaml --policy policy-hello
-#        run: conftest test hello-deply.yaml --policy policy-hello/* 054
-#        run: conftest test hello-deply.yaml --policy policy-hello/mypolicy.rego 053
-
+        
