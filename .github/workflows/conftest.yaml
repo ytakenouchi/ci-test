@@ -6,7 +6,7 @@ on:
       - develop/conftest
   pull_request:
     branches:
-      - develop/conftest
+      - main
 
 #条件
 jobs:
