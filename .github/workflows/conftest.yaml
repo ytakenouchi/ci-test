@@ -8,7 +8,7 @@ on:
     branches:
       - develop/conftest
 
-#条件 
+#条件  
 jobs:
   import_policy:
     name: conf test
