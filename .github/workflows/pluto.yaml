@@ -7,7 +7,7 @@ on:
 
 jobs:
   pluto:
-    name: pluto test-OK
+    name: pluto test-yaml
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
