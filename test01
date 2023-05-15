@@ -1,0 +1,3 @@
+# Source: pluto-sample/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
