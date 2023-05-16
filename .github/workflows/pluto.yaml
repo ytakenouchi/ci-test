@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - develop/pluto
+    workflow_call:
 
 jobs:
   pluto:
