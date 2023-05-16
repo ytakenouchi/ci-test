@@ -3,7 +3,7 @@ name: pluto test-OK0515-d
 on:
   push:
     branches:
-      - main
+      - develop/pluto
 
 jobs:
   pluto:
