@@ -1,16 +1,24 @@
 name: conftest
 
 on:
-  push:
-    branches:
-       - main
-#      - develop/conftest
-  pull_request:
-    branches:
-       - main
-#      - develop/conftest
+#  push:
+#    branches:
+#       - main
+##      - develop/conftest
+#  pull_request:
+#    branches:
+#       - main
+##      - develop/conftest
   workflow_call:
-  
+    inputs:
+      repository: 
+        type: string
+      path:
+        type: string
+    secrets:
+      pat:
+        required: true
+
 #条件  
 jobs:
   import_policy:
@@ -24,9 +32,9 @@ jobs:
       - name: rego repository
         uses: actions/checkout@v3
         with:
-          repository: ytakenouchi/ci-conftest
-          path: ./policy
-#         token: ${{ secrets.AP_TO_CICONFTEST }} 
+          repository: ${{ inputs.repository }}
+          path: ${{ inputs.path }}
+          token: ${{ secrets.pat}} 
 #          token: ${{ secrets.CONFTEST_PAT }} 
 
       - name: conf install at ci-test
