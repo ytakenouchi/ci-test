@@ -20,7 +20,7 @@ jobs:
       - name: This repository form ci-test
         uses: actions/checkout@v3
       - name: "ls ci-test after checkout"
-        run: ls -la  ./policy
+        run: ls -la  #./policy エラーになる
       - name: rego repository
         uses: actions/checkout@v3
         with:
