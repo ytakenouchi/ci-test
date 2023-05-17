@@ -11,10 +11,12 @@ on:
   
 #条件  
 jobs:
+  call_reusable_workflow_on_other_repository:
+    uses: ytakenouchi/ci-test/.github/workflows/pluto.yaml@develop/pluto
+
   import_policy:
     name: conf test
     runs-on: ubuntu-latest
-
     steps:
       - name: This repository
         uses: actions/checkout@v3
