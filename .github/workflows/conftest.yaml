@@ -18,7 +18,7 @@ jobs:
       - name: This repository form ci-test
         uses: actions/checkout@v3
       - name: "ls ci-test after checkout"
-        run: ls -la  
+        run: ls -la  ./policy
 #      - name: rego repository
 #        uses: actions/checkout@v3
 #        with:
