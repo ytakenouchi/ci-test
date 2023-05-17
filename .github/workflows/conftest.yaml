@@ -40,9 +40,10 @@ jobs:
           ls -la
       - name: after conf install ls -la
         run: ls -la
-      - name: "conf test pod.yaml"
 #ベンダーA
-        run: conftest test --policy ./policy ./manifests/pod01.yaml #複数ファイル 
+      - name: "conf test pod.yaml"
+        run: conftest test --policy ./policy ./manifests/pod01.yaml
+        #複数ファイル 
 #1 複数YAMLファイルを実行
 
 #Pluto/配下のyamlを実行
