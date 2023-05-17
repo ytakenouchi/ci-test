@@ -19,12 +19,12 @@ jobs:
       - name: This repository
         uses: actions/checkout@v3
       
-#      - name: rego repository
-#        uses: actions/checkout@v3
-#        with:
-#          repository: ytakenouchi/ci-conftest
-#          path: policy
-#          token: ${{ secrets.CONFTEST_PAT }} 
+      - name: rego repository
+        uses: actions/checkout@v3
+        with:
+          repository: ytakenouchi/ci-conftest
+          path: policy
+          token: ${{ secrets.CONFTEST_PAT }} 
 
       - name: conf install
         run: |
