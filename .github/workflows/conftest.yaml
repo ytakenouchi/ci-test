@@ -19,12 +19,12 @@ jobs:
         uses: actions/checkout@v3
       - name: "ls ci-test after checkout"
         run: ls -la  ./policy
-#      - name: rego repository
-#        uses: actions/checkout@v3
-#        with:
-#          repository: ytakenouchi/ci-conftest
-#          path: policy
-#          token: ${{ secrets.AP_TO_CICONFTEST }} 
+      - name: rego repository
+        uses: actions/checkout@v3
+        with:
+          repository: ytakenouchi/ci-conftest
+          path: policy
+          token: ${{ secrets.AP_TO_CICONFTEST }} 
 #          token: ${{ secrets.CONFTEST_PAT }} 
 
       - name: conf install at ci-test
@@ -40,6 +40,6 @@ jobs:
         #   docker pull openpolicyagent/conftest
       - name: after conf install ls -la
         run: ls -la
-#      - name: "conf test pod.yaml"
+      - name: "conf test pod.yaml"
 ##        run: conftest test --policy ./policy ./manifests/Pod.yaml 
-#        run: conftest test manifests/Pod.yaml 
+        run: conftest test manifests/Pod.yaml 
