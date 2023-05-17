@@ -3,10 +3,12 @@ name: conftest
 on:
   push:
     branches:
-      - develop/conftest
+       - main
+#      - develop/conftest
   pull_request:
     branches:
-      - develop/conftest
+       - main
+#      - develop/conftest
   workflow_call:
   
 #条件  
