@@ -26,8 +26,8 @@ jobs:
         with:
           repository: ytakenouchi/ci-conftest
           path: ./policy
-          token: ${{ secrets.AP_TO_CICONFTEST }} 
-#          token: ${{ secrets.CONFTEST_PAT }} 
+#          token: ${{ secrets.AP_TO_CICONFTEST }} 
+          token: ${{ secrets.CONFTEST_PAT }} 
 
       - name: conf install at ci-test
         run: |
