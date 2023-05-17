@@ -36,5 +36,5 @@ jobs:
       # - name: docker pull
         # run: |
         #   docker pull openpolicyagent/conftest
-      - name: "conf test"
+      - name: "conf test pod.yaml"
         run: conftest test manifests/Pod.yaml 
