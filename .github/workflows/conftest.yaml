@@ -46,6 +46,7 @@ jobs:
           for chk_file in $yaml_files
           do
             ls -l $chk_file
+            conftest test --policy ./policy $chk_file
           done
 
 #            conftest test --policy ./policy $chk_file
