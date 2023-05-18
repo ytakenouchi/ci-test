@@ -45,9 +45,10 @@ jobs:
           cnt=1
           for chk_file in $yaml_files
           do
-            echo chk_file
+            ls -l $chk_file
             conftest test --policy ./policy $chk_file
-            echo cnt_i = cnt_i + 1
+            $cnt_i = $cnt_i + 1
+            echo $cnt_i
           done
 
 #            conftest test --policy ./policy $chk_file
