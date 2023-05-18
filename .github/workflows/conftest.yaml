@@ -39,8 +39,6 @@ jobs:
           ls -la
       - name: pwd
         run: pwd
-      - name: ls policy
-        run: ls -la ./policy
       - name: find yaml-file
         run: |
           pwd
