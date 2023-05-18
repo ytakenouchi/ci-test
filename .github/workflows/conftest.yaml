@@ -42,10 +42,12 @@ jobs:
       - name: find yaml-file
         run: |
           yaml_files=`find . -type f | egrep -v 'yobidashi\.yaml$' | egrep '\.(yml|yaml)$'`
-
+          cnt=1
           for chk_file in $yaml_files
           do
-            conftest test --policy ./policy "$chk_file"
+            echo chk_file
+            conftest test --policy ./policy $chk_file
+            echo cnt_i = cnt_i + 1
           done
 
 #            conftest test --policy ./policy $chk_file
