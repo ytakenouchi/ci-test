@@ -37,8 +37,8 @@ jobs:
           sudo mv conftest /usr/local/bin/
           conftest --version
           ls -la
-      - name: ls manifests
-        run: ls -la ./manifests
+      - name: pwd
+        run: pwd
       - name: ls policy
         run: ls -la ./policy
       - name: find yaml-file
