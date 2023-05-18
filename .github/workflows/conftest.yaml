@@ -41,7 +41,6 @@ jobs:
         run: pwd
       - name: find yaml-file
         run: |
-          pwd
           yaml_files=`find . -type f | egrep -v 'yobidashi\.yaml$' | egrep '\.(yml|yaml)$'`
 
           for chk_file in $yaml_files
