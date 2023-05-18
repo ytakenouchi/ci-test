@@ -48,7 +48,8 @@ jobs:
         run: |
           for chk_file in $yaml_files
           do
-            echo conftest test --policy ./policy "$chk_file"          done
+            echo conftest test --policy ./policy $chk_file
+          done
 
 #        run: conftest test --policy ./policy $yaml_file
 #複数ファイル v
