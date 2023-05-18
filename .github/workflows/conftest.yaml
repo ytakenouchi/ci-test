@@ -45,7 +45,7 @@ jobs:
 
           for chk_file in $yaml_files
           do
-            echo conftest test --policy ./policy $chk_file
+            conftest test --policy ./policy $chk_file
           done
         #  echo $yaml_files
 #           
