@@ -45,13 +45,7 @@ jobs:
 
           for chk_file in $yaml_files
           do
-            conftest test --policy ./policy $chk_file
+            conftest test --policy ./policy "$chk_file"
           done
-        #  echo $yaml_files
-#           
 
-#        run: conftest test --policy ./policy $yaml_file
-#複数ファイル v
-#1 複数YAMLファイルを実行
-#Pluto/配下のyamlを実行
-#        run: conftest test --policy ./policy ./plut_folder/* #複数ファイル
+#            conftest test --policy ./policy $chk_file
