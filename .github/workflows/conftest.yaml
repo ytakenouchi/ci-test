@@ -49,7 +49,7 @@ jobs:
       - name: "conf test pod.yaml"
         run: conftest test --policy ./policy ./manifests/pod01.yaml
 #        run: conftest test --policy ./policy ./manifests/pod01.yaml
-#複数ファイル 
+#複数ファイル v
 #1 複数YAMLファイルを実行
 #Pluto/配下のyamlを実行
 #        run: conftest test --policy ./policy ./plut_folder/* #複数ファイル
