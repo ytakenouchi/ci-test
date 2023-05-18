@@ -28,7 +28,6 @@ jobs:
           repository: ${{ inputs.repository }}
           path: ${{ inputs.path }}
           token: ${{ secrets.pat}} 
-#          token: ${{ secrets.CONFTEST_PAT }} 
 
       - name: conf install at ci-test
         run: |
