@@ -45,10 +45,10 @@ jobs:
 
           for chk_file in $yaml_files
           do
-            echo $chk_file
+            echo conftest test --policy ./policy $chk_file
           done
         #  echo $yaml_files
-#            echo conftest test --policy ./policy $chk_file
+#           
 
 #        run: conftest test --policy ./policy $yaml_file
 #複数ファイル v
