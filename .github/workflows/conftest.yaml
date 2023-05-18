@@ -42,9 +42,12 @@ jobs:
         run: ls -la ./manifests
       - name: ls policy
         run: ls -la ./policy
-#ベンダーA
+      - name: find yaml-file
+        run: |
+          yaml_file=`find . -type f | egrep -v 'yobidashi\.yaml$' | egrep '\.(yml|yaml)$'`
+          echo $yaml_file
       - name: "conf test pod.yaml"
-        run: conftest test --policy ./policy ./manifests/pod01.yaml --combine
+        run: conftest test --policy ./policy ./manifests/pod01.yaml
 #        run: conftest test --policy ./policy ./manifests/pod01.yaml
 #複数ファイル 
 #1 複数YAMLファイルを実行
