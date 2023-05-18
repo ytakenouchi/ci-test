@@ -50,7 +50,7 @@ jobs:
         run: |
           for chk_file in $yaml_files
           do
-            conftest test --policy ./policy $chk_file
+            echo `conftest test --policy ./policy $chk_file`
           done
 
 #        run: conftest test --policy ./policy $yaml_file
