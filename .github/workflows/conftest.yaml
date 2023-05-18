@@ -44,11 +44,9 @@ jobs:
           pwd
           yaml_files=`find . -type f | egrep -v 'yobidashi\.yaml$' | egrep '\.(yml|yaml)$'`
           echo $yaml_files
-      - name: "chk yaml files"
-        run: |
           for chk_file in $yaml_files
           do
-            echo ${chk_file}
+            echo $chk_file
           done
 
 #            echo conftest test --policy ./policy $chk_file
