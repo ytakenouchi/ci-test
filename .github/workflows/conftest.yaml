@@ -46,8 +46,8 @@ jobs:
           yaml_file=`find . -type f | egrep -v 'yobidashi\.yaml$' | egrep '\.(yml|yaml)$'`
           echo $yaml_file
       - name: "conf test pod.yaml"
-        run: conftest test --policy ./policy ./manifests/pod01.yaml
 #        run: conftest test --policy ./policy ./manifests/pod01.yaml
+        run: conftest test --policy ./policy $yaml_file
 #複数ファイル v
 #1 複数YAMLファイルを実行
 #Pluto/配下のyamlを実行
