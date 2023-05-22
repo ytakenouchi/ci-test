@@ -47,7 +47,3 @@ jobs:
             ls -l $chk_file
             conftest test --policy ./policy $chk_file
           done
-
-#          yaml_files=`find . -type f | egrep -v 'yobidashi\.yaml$' | egrep '\.(yml|yaml)$'`
-#            conftest test --policy ./policy $chk_file
-#            conftest test --policy ./policy $chk_file
