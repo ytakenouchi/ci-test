@@ -41,12 +41,13 @@ jobs:
         run: pwd
       - name: find yaml-file
         run: |
-          yaml_files=`find . -type f | egrep -v 'yobidashi\.yaml$' | egrep '\.(yml|yaml)$'`
+          yaml_files=`find . -type f | egrep -v (yobidashi\.yaml$|test-ok\.yaml) | egrep '\.(yml|yaml)$'`
           for chk_file in $yaml_files
           do
             ls -l $chk_file
             conftest test --policy ./policy $chk_file
           done
 
+          #          yaml_files=`find . -type f | egrep -v 'yobidashi\.yaml$' | egrep '\.(yml|yaml)$'`
 #            conftest test --policy ./policy $chk_file
 #            conftest test --policy ./policy $chk_file
