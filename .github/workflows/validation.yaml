@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: checkout ci-test
         uses: actions/checkout@v3
+      - name: "001"
+        run: echo "001"; pwd; ls -la  #./policy エラーになる
       - name: checkout helm-test
         uses: actions/checkout@v3
         with:
@@ -27,7 +29,7 @@ jobs:
           path: ${{ inputs.path }}
           token: ${{ secrets.pat}} 
       - name: "002"
-        run: echo "001"; pwd; ls -la  #./policy エラーになる
+        run: echo "002"; pwd; ls -la  #./policy エラーになる
       - name: conf install at ci-test
         run: |
           LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)
