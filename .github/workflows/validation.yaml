@@ -15,14 +15,14 @@ on:
 #条件  
 jobs:
   import_policy:
-    name: conf test
+    name: validation test
     runs-on: ubuntu-latest
     steps:
-      - name: This repository form ci-test
+      - name: checkout ci-test
         uses: actions/checkout@v3
       - name: "002"
         run: echo "001"; pwd; ls -la  #./policy エラーになる
-      - name: rego repository
+      - name: checkout helm-test
         uses: actions/checkout@v3
         with:
           repository: ${{ inputs.repository }}
