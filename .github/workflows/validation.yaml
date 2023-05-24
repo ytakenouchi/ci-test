@@ -20,8 +20,8 @@ jobs:
     steps:
       - name: This repository form ci-test
         uses: actions/checkout@v3
-      - name: "ls ci-test after checkout"
-        run: ls -la  #./policy エラーになる
+      - name: "002"
+        run: echo "001"; pwd; ls -la  #./policy エラーになる
       - name: rego repository
         uses: actions/checkout@v3
         with:
@@ -36,8 +36,8 @@ jobs:
           tar xzf conftest_${LATEST_VERSION}_Linux_x86_64.tar.gz
           sudo mv conftest /usr/local/bin/
           conftest --version
-      - name: pwd ls -la
-        run: pwd; ls -la
+      - name: "002"
+        run: echo "002"; pwd; ls -la
 #      - name: find yaml-file
 #        run: |
 #          yaml_files=`find . -type f | egrep -v 'test-ok\.yaml$' | egrep '\.(yml|yaml)$'`
