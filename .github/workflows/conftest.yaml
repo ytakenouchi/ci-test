@@ -18,17 +18,19 @@ jobs:
     name: conf test
     runs-on: ubuntu-latest
     steps:
-      - name: This repository form ci-test
+      - name: This repository
         uses: actions/checkout@v3
-      - name: "ls ci-test after checkout"
-        run: ls -la  #./policy エラーになる
+      - name: "01"
+        run: pwd; ls -la
       - name: rego repository
         uses: actions/checkout@v3
         with:
           repository: ${{ inputs.repository }}
           path: ${{ inputs.path }}
           token: ${{ secrets.pat}} 
-
+      - name: "02"
+        run: pwd; ls -la
+  
       - name: conf install at ci-test
         run: |
           LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)

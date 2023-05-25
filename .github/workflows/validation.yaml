@@ -21,7 +21,7 @@ jobs:
       - name: checkout ci-test
         uses: actions/checkout@v3
       - name: "001"
-        run: echo "001"; pwd; ls -la  #./policy エラーになる
+        run: echo "001"; pwd; ls -la
       - name: checkout helm-test
         uses: actions/checkout@v3
         with:
