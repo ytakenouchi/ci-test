@@ -31,7 +31,8 @@ jobs:
       - name: "002"
         run: |
               pwd; ls -la
-              mkdir 
+              mkdir --help
+              mkdir -p helm_test_folder
       - name: conf install at ci-test
         run: |
           LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)
@@ -42,7 +43,6 @@ jobs:
       - name: "003"
         run: |
               echo "003"
-              mkdir -p helm_test_folder
               pwd
               ls -la
               mv application.yaml ./helm_test_folder
