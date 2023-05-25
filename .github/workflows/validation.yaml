@@ -43,6 +43,7 @@ jobs:
               pwd
               ls -la
               mv application.yaml ./helm_test_folder
+              pwd; ls
 
 #      - name: find yaml-file
 #        run: |
