@@ -46,6 +46,7 @@ jobs:
               mv application.yaml ./helm_chart_folder/
               cd ./helm_chart_folder/
               pwd; ls -la
+              helm template . > test.yaml
 
 #              cd ./helm_test_folder
 #              pwd; ls
