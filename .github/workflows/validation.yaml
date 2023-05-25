@@ -42,8 +42,8 @@ jobs:
               echo "003"
               pwd
               ls -la
-              mv application.yaml ./test01_folder
-              cd ./test01_folder ; ls -la
+              mv application.yaml ./helm_test_folder
+
 #      - name: find yaml-file
 #        run: |
 #          yaml_files=`find . -type f | egrep -v 'test-ok\.yaml$' | egrep '\.(yml|yaml)$'`
