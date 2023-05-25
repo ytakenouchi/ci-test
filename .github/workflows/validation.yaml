@@ -39,7 +39,9 @@ jobs:
           conftest --version
       - name: "003"
         run: |
-              echo "003"; pwd; ls -la
+              echo "003"
+              pwd
+              ls -la
               mv application.yaml ./test01_folder
               cd ./test01_folder ; ls -la
 #      - name: find yaml-file
