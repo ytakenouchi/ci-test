@@ -47,6 +47,7 @@ jobs:
               cd ./helm_chart_folder/
               pwd; ls -la
               helm version
+              pwd
               helm template . > test.yaml
 
 #              cd ./helm_test_folder
