@@ -49,10 +49,10 @@ jobs:
               echo "003"
               pwd
               ls -la
-              mv application.yaml ./helm_test_folder
-              cd ./helm_test_folder
-              pwd; ls
+#              mv application.yaml ./helm_test_folder
+#              cd ./helm_test_folder
 #              pwd; ls
+##              pwd; ls
 #              helm template . > test.yaml
 
 #      - name: find yaml-file
