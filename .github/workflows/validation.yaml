@@ -31,7 +31,7 @@ jobs:
       - name: "002"
         run: |
               pwd; ls -la
-              cd ./helm_chart_folder
+              cd ./helm_chart_folder/helm_test_folder
               pwd; ls -la
 #              -la helm_test_folder/.
 #              mkdir --help
