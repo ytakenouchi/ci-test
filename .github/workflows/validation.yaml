@@ -43,8 +43,9 @@ jobs:
               pwd
               ls -la
               mv application.yaml ./helm_test_folder
-              cd ./helm_test_folder; pwd; ls
-              helm template . > test.yaml
+              cd ./helm_test_folder
+#              pwd; ls
+#              helm template . > test.yaml
 
 #      - name: find yaml-file
 #        run: |
