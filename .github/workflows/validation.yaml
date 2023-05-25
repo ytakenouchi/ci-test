@@ -44,7 +44,7 @@ jobs:
               ls -la
               mv application.yaml ./helm_test_folder
               cd ./helm_test_folder; pwd; ls
-              helm template application.yaml > test.yaml
+              helm template . > test.yaml
 
 #      - name: find yaml-file
 #        run: |
