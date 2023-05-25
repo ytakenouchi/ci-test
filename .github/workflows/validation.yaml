@@ -18,11 +18,7 @@ jobs:
     name: validation test
     runs-on: ubuntu-latest
     steps:
-      - name: checkout ci-test
-        uses: actions/checkout@v3
-      - name: "001"
-        run: echo "001"; pwd; ls -la
-      - name: checkout helm-test
+      - name: checkout helm-test 002
         uses: actions/checkout@v3
         with:
           repository: ${{ inputs.repository }}
@@ -30,6 +26,10 @@ jobs:
           token: ${{ secrets.pat}} 
       - name: "002"
         run: echo "00-helmtest"; pwd; ls -la  #./policy エラーになる
+      - name: checkout ci-test 001
+        uses: actions/checkout@v3
+      - name: "001"
+        run: echo "001"; pwd; ls -la
       - name: conf install at ci-test
         run: |
           LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)
