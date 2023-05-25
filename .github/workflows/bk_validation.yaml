@@ -18,18 +18,18 @@ jobs:
     name: validation test
     runs-on: ubuntu-latest
     steps:
-      - name: 001-repo
-        uses: actions/checkout@v3
-      - name: "001"
-        run: pwd; ls -la
-      - name: 002-repo
+      - name: checkout helm-test 002
         uses: actions/checkout@v3
         with:
           repository: ${{ inputs.repository }}
           path: ${{ inputs.path }}
           token: ${{ secrets.pat}} 
       - name: "002"
-        run: pwd; ls -la
+        run: echo "00-helmtest"; pwd; ls -la  #./policy エラーになる
+      - name: checkout ci-test 001
+        uses: actions/checkout@v3
+      - name: "001"
+        run: echo "001"; pwd; ls -la
       - name: conf install at ci-test
         run: |
           LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)
@@ -37,8 +37,8 @@ jobs:
           tar xzf conftest_${LATEST_VERSION}_Linux_x86_64.tar.gz
           sudo mv conftest /usr/local/bin/
           conftest --version
-      - name: "003"
-        run: echo "003"; pwd; ls -la
+      - name: "002"
+        run: echo "002"; pwd; ls -la
 #      - name: find yaml-file
 #        run: |
 #          yaml_files=`find . -type f | egrep -v 'test-ok\.yaml$' | egrep '\.(yml|yaml)$'`
