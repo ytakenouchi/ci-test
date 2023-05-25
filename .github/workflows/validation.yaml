@@ -31,9 +31,9 @@ jobs:
       - name: "002"
         run: |
               pwd; ls -la
-              mkdir --help
-              mkdir -p helm_test_folder
-              pwd; ls -la helm_test_folder
+#              mkdir --help
+#              mkdir -p helm_test_folder
+#              pwd; ls -la helm_test_folder
               - name: conf install at ci-test
         run: |
           LATEST_VERSION=$(wget -O - "https://api.github.com/repos/open-policy-agent/conftest/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' | cut -c 2-)
