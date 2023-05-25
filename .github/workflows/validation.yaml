@@ -30,7 +30,7 @@ jobs:
           token: ${{ secrets.pat}} 
       - name: "002"
         run: |
-              pwd; ls -la
+              pwd; ls -la helm_test_folder/.
 #              mkdir --help
 #              mkdir -p helm_test_folder
 #              pwd; ls -la helm_test_folder
