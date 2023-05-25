@@ -48,7 +48,10 @@ jobs:
               pwd; ls -la
               helm version
               pwd
-              helm template -f values.yaml > ./test.yaml
+              helm template . > ./test.yaml
+
+#              helm template -f values.yaml > ./test.yaml
+
 
 #              cd ./helm_test_folder
 #              pwd; ls
