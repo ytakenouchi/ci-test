@@ -31,7 +31,8 @@ jobs:
       - name: "002"
         run: |
               pwd; ls -la
-              ls -la 一時保存
+              cd helm_test_folder
+              pwd; ls -la
 #              -la helm_test_folder/.
 #              mkdir --help
 #              mkdir -p helm_test_folder
