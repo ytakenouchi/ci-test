@@ -45,6 +45,6 @@ jobs:
               echo 002; pwd; ls -la
               helm version
               echo 003; pwd; ls -la
-              helm template . > ./test.yaml
-              pwd; ls -la
+#              helm template . > test.yaml
+#              pwd; ls -la
 #
