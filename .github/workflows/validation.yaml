@@ -42,6 +42,7 @@ jobs:
               mv values.yaml bk_values.yaml
               pwd; ls -la
               mv application.yaml values.yaml 
+              mkdir -p charts
               echo 002; pwd; ls -la
               helm version
               echo 003; pwd; ls -la
