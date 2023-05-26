@@ -40,8 +40,10 @@ jobs:
               cd ./helm_chart_folder/
               pwd; ls -la
               mv values.yaml bk_values.yaml
-              mv application.yaml values.yaml 
-              helm version
-              pwd
-              helm template . > ./test.yaml
-              pwd; ls -la
+#              pwd; ls -la
+#              mv application.yaml values.yaml 
+#              helm version
+#              pwd
+#              helm template . > ./test.yaml
+#              pwd; ls -la
+#
