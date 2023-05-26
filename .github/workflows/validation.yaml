@@ -38,7 +38,7 @@ jobs:
               ls -la
               mv application.yaml ./helm_chart_folder/
               cd ./helm_chart_folder/
-              pwd; ls -la
+              echo 001; pwd; ls -la
               mv values.yaml bk_values.yaml
 #              pwd; ls -la
 #              mv application.yaml values.yaml 
