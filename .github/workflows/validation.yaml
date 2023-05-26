@@ -40,7 +40,7 @@ jobs:
               cd ./helm_chart_folder/
               cat 03.values.yaml
               echo 001; pwd; ls -la
-              mv values.yaml bk_values.yaml_01
+              mv values.yaml bk_values.yaml
               mkdir -p charts
               echo 002; pwd; ls -la
               helm template -f 03.values.yaml . > 04.testkekka.yaml
