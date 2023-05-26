@@ -41,9 +41,9 @@ jobs:
               echo 001; pwd; ls -la
               mv values.yaml bk_values.yaml
               pwd; ls -la
-#              mv application.yaml values.yaml 
-#              helm version
-#              pwd
-#              helm template . > ./test.yaml
-#              pwd; ls -la
+              mv application.yaml values.yaml 
+              helm version
+              pwd
+              helm template . > ./test.yaml
+              pwd; ls -la
 #
