@@ -36,7 +36,6 @@ jobs:
               echo "003"
               pwd
               ls -la
-              mv application.yaml ./helm_chart_folder/
               yq eval '.spec.source.helm.value' application.yaml > ./helm_chart_folder/02.aplication.values.yaml
               cd ./helm_chart_folder/
               echo 001; pwd; ls -la
@@ -51,3 +50,4 @@ jobs:
 #mv values.yaml bk_values.yaml
 #pwd; ls -la
 #mv application.yaml values.yaml 
+#mv application.yaml ./helm_chart_folder/
