@@ -45,6 +45,7 @@ jobs:
               echo 002; pwd; ls -la
               helm template -f 03.values.yaml . > 04.testkekka.yaml
               echo 003; pwd; ls -la
+              cat 04.testkekka.yaml
 
 #              helm version
 #              helm template -f 03.values.yaml . > 04.testkekka.yaml
