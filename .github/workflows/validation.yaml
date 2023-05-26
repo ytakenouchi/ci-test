@@ -42,12 +42,9 @@ jobs:
               mv values.yaml bk_values.yaml
               pwd; ls -la
               mv application.yaml values.yaml 
-              pwd; ls -la
-      - name: "004"
-        run: |
-              pwd; ls -la
+              echo 002; pwd; ls -la
               helm version
-              pwd
+              echo 003; pwd; ls -la
               helm template . > ./test.yaml
               pwd; ls -la
 #
