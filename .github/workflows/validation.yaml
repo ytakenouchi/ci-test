@@ -44,8 +44,8 @@ jobs:
               mkdir -p charts
               echo 002; pwd; ls -la
               helm version
-              helm template -f 03.values.yaml . > 04.testkekka.yaml
-              echo 003; pwd; ls -la
+#              helm template -f 03.values.yaml . > 04.testkekka.yaml
+#              echo 003; pwd; ls -la
 
 #yq eval '.spec.source.helm.value' 02_test.yaml > 03_output.yaml
 
