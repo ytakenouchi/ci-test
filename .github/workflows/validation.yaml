@@ -41,10 +41,9 @@ jobs:
               cat 03.values.yaml
               echo 001; pwd; ls -la
               mv values.yaml bk_values.yaml_01
-              mv 03.values.yaml values.yaml
               mkdir -p charts
               echo 002; pwd; ls -la
-              helm template . > 04.testkekka.yaml
+              helm template 03.values.yaml > 04.testkekka.yaml
               echo 003; pwd; ls -la
 
 #              helm version
