@@ -36,28 +36,12 @@ jobs:
               echo "003"
               pwd
               ls -la
-              mv application.yaml ./helm_chart_folder/value.yaml
+              mv application.yaml ./helm_chart_folder/
               cd ./helm_chart_folder/
               pwd; ls -la
+              mv values.yaml bk_values.yaml
+              mv application.yaml 
               helm version
               pwd
               helm template . > ./test.yaml
               pwd; ls -la
-
-#              helm template -f values.yaml > ./test.yaml
-
-
-#              cd ./helm_test_folder
-#              pwd; ls
-##              pwd; ls
-#              helm template . > test.yaml
-
-#      - name: find yaml-file
-#        run: |
-#          yaml_files=`find . -type f | egrep -v 'test-ok\.yaml$' | egrep '\.(yml|yaml)$'`
-#          for chk_file in $yaml_files
-#          do
-#            ls -l $chk_file
-#            conftest test --policy ./policy $chk_file
-#          done
-#
