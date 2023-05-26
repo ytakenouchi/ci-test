@@ -43,6 +43,7 @@ jobs:
               pwd; ls -la
       - name: "004"
         run: |
+              pwd; ls -la
               mv application.yaml values.yaml 
               pwd; ls -la
               helm version
