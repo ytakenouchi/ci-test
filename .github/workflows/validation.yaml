@@ -39,6 +39,7 @@ jobs:
               yq eval '.spec.source.helm.value' application.yaml > ./helm_chart_folder/02.aplication.values.yaml
               cd ./helm_chart_folder/
               echo 001; pwd; ls -la
+              mv values.yaml bk_values.yaml
               mkdir -p charts
               echo 002; pwd; ls -la
               helm version
@@ -47,7 +48,7 @@ jobs:
               pwd; ls -la
 
 #yq eval '.spec.source.helm.value' 02_test.yaml　> 03_output.yaml
-#mv values.yaml bk_values.yaml
+
 #pwd; ls -la
 #mv application.yaml values.yaml 
 #mv application.yaml ./helm_chart_folder/
