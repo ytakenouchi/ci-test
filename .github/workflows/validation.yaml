@@ -40,7 +40,7 @@ jobs:
               cd ./helm_chart_folder/
               echo 001; pwd; ls -la
               mv values.yaml bk_values.yaml
-#              pwd; ls -la
+              pwd; ls -la
 #              mv application.yaml values.yaml 
 #              helm version
 #              pwd
