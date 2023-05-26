@@ -36,7 +36,7 @@ jobs:
               echo "003"
               pwd
               ls -la
-              mv application.yaml ./helm_chart_folder/
+              mv application.yaml ./helm_chart_folder/value.yaml
               cd ./helm_chart_folder/
               pwd; ls -la
               helm version
