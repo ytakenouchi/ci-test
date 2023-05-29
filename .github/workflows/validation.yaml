@@ -39,12 +39,14 @@ jobs:
               yq eval '.spec.source.helm.value' application.yaml > ./helm_chart_folder/03.values.yaml
               cd ./helm_chart_folder/
               cat 03.values.yaml
-              echo 001; pwd; ls -la
+              echo 003; pwd; ls -la
               mv values.yaml bk_values.yaml
               mkdir -p charts
-              echo 002; pwd; ls -la
+              pwd; ls -la
+      - name: "004"
+        run: |
               helm template -f 03.values.yaml . > 04.testkekka.yaml
-              echo 003; pwd; ls -la
+              echo 004; pwd; ls -la
               cat 04.testkekka.yaml
 
 #              helm version
